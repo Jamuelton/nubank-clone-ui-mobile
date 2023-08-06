@@ -1,10 +1,14 @@
 import { Text, View } from "react-native";
 
 import contentStyle from "./Style";
+import { Account } from "../account/Accont";
 
 export function Content() {
   return (
     <View style={contentStyle.container}>
+      <View>
+        <Account />
+      </View>
       <View>
         <Text>Produtos</Text>
       </View>
