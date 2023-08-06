@@ -1,21 +1,13 @@
 import { Text, View } from "react-native";
-import buttonStyle from "./Style";
+import { UserBar } from "../userBar/UserBar";
+import containerStyle from "./Style";
+import { Content } from "../principalContent/Content";
 
 export function Container() {
   return (
-    <View>
-      <View>
-        <Text>Usuário</Text>
-      </View>
-      <View>
-        <Text>Produtos</Text>
-      </View>
-      <View>
-        <Text>Meus cartões</Text>
-      </View>
-      <View>
-        <Text>Emprestimos</Text>
-      </View>
+    <View style={containerStyle.container}>
+      <UserBar />
+      <Content />
     </View>
   );
 }
