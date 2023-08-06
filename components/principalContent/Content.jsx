@@ -2,6 +2,7 @@ import { Text, View } from "react-native";
 
 import contentStyle from "./Style";
 import { Account } from "../account/Accont";
+import { SelectFunc } from "../selectFunc/SelectFunc";
 
 export function Content() {
   return (
@@ -11,6 +12,7 @@ export function Content() {
       </View>
       <View>
         <Text>Produtos</Text>
+        <SelectFunc icon="acao" text="acao" />
       </View>
       <View>
         <Text>Meus cartões</Text>
