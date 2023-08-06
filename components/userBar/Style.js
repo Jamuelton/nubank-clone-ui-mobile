@@ -13,18 +13,33 @@ const userBarStyle = StyleSheet.create({
     padding: 10,
   },
   topPart: {
-    backgroundColor: "red",
     flexDirection: "row",
     justifyContent: "space-between",
-    alignContent: "center",
+    alignItems: "center",
+    height: "50%",
+  },
+  perfil: {
+    backgroundColor: "#9B03FE",
+    width: 70,
+    height: 70,
+    padding: 10,
+    borderRadius: "100%",
+    justifyContent: "center",
+    alignItems: "center",
   },
   icons: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignContent: "center",
-    gap: 8,
+    color: "#fff",
+    gap: 32,
   },
-  userName: {},
+  userNameView: {},
+  userName: {
+    color: "#fff",
+    fontSize: 16,
+    fontWeight: "500",
+  },
 });
 
 export default userBarStyle;
