@@ -1,7 +1,9 @@
 import { StyleSheet } from "react-native";
 
 const annouStyle = StyleSheet.create({
-  container: {},
+  container: {
+    padding: 10,
+  },
   cardImg: {
     width: 270,
     height: 120,

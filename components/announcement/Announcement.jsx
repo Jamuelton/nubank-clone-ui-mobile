@@ -1,21 +1,16 @@
 import { Image, View, Text } from "react-native";
 import annouStyle from "./Style";
 
-export function Announcement() {
+export function Announcement({ img, title, content, button }) {
   return (
     <View style={annouStyle.container}>
-      <Image
-        source={require("../../assets/nubank.png")}
-        style={annouStyle.cardImg}
-      />
+      <Image source={img} style={annouStyle.cardImg} />
       <View style={annouStyle.bottomCard}>
-        <Text style={annouStyle.title}>Nu Limite Garantido</Text>
-        <Text style={annouStyle.info}>
-          Seu dinheiro vira mais limite redendo a 100% do CDI
-        </Text>
+        <Text style={annouStyle.title}>{title}</Text>
+        <Text style={annouStyle.info}>{content}</Text>
 
         <View style={annouStyle.button}>
-          <Text style={annouStyle.buttonText}>Ver mais</Text>
+          <Text style={annouStyle.buttonText}>{button}</Text>
         </View>
       </View>
     </View>

@@ -10,6 +10,10 @@ const contentStyle = StyleSheet.create({
     marginTop: 10,
     padding: 10,
   },
+  text: {
+    fontSize: 16,
+    fontWeight: "bold",
+  },
 });
 
 export default contentStyle;

@@ -50,9 +50,36 @@ export function Content() {
     },
   ];
 
+  const ANNOUN_DATA = [
+    {
+      id: "1",
+      img: require("../../assets/nubank.png"),
+      title: "Nu Limite Garantido",
+      content: "Seu dinheiro vira mais limite redendo a 100% do CDI",
+      button: "Ver mais",
+    },
+    {
+      id: "2",
+      img: require("../../assets/nubank.png"),
+      title: "Nu Limite Garantido",
+      content: "Seu dinheiro vira mais limite redendo a 100% do CDI",
+      button: "Ver mais",
+    },
+    {
+      id: "3",
+      img: require("../../assets/nubank.png"),
+      title: "Nu Limite Garantido",
+      content: "Seu dinheiro vira mais limite redendo a 100% do CDI",
+      button: "Ver mais",
+    },
+  ];
+
   const SelectItem = ({ icon, text }) => <SelectFunc icon={icon} text={text} />;
   const InfoItem = ({ purpleText, blackText }) => (
     <InfoCard purpleText={purpleText} blackText={blackText} />
+  );
+  const AnnounItem = ({ img, title, content, button }) => (
+    <Announcement img={img} title={title} content={content} button={button} />
   );
   return (
     <View style={contentStyle.container}>
@@ -97,8 +124,21 @@ export function Content() {
           content="O jeito Nu de investir: sem asteriscos, linguagem fácil e a partir de R$1. Saiba mais.  "
         />
       </View>
-      <View>
-        <Announcement />
+      <View style={contentStyle.cardView}>
+        <Text style={contentStyle.text}>Descubra mais</Text>
+        <FlatList
+          data={ANNOUN_DATA}
+          renderItem={({ item }) => (
+            <AnnounItem
+              img={item.img}
+              title={item.title}
+              content={item.content}
+              button={item.button}
+            />
+          )}
+          keyExtractor={(item) => item.id}
+          horizontal
+        />
       </View>
     </View>
   );
