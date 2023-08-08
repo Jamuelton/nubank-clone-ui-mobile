@@ -7,7 +7,6 @@ const contentStyle = StyleSheet.create({
     padding: 10,
   },
   cardView: {
-    alignItems: "flex-start",
     marginTop: 10,
     padding: 10,
   },

@@ -7,9 +7,10 @@ import { MaterialIcons } from "@expo/vector-icons";
 
 import { MyCards } from "../myCards/MyCards";
 import { InfoCard } from "../infoCard/InfoCard";
+import { Credit } from "../credit/Credit";
 
 export function Content() {
-  const selectData = [
+  const SELECT_DATA = [
     {
       id: "1",
       icon: <MaterialIcons name="api" size={24} color="black" />,
@@ -29,7 +30,28 @@ export function Content() {
     },
   ];
 
-  const Item = ({ icon, text }) => <SelectFunc icon={icon} text={text} />;
+  const INFO_DATA = [
+    {
+      id: "1",
+      purpleText: " Pix no credito: ",
+      blackText: "transfira sem usar o seu saldo",
+    },
+    {
+      id: "2",
+      purpleText: "Aumente seu limite do cartao ",
+      blackText: "hoje com o Nu Limite Garantido",
+    },
+    {
+      id: "3",
+      purpleText: "Convide amigos para o Nubank ",
+      blackText: "e desbloquei brascoes incriveis",
+    },
+  ];
+
+  const SelectItem = ({ icon, text }) => <SelectFunc icon={icon} text={text} />;
+  const InfoItem = ({ purpleText, blackText }) => (
+    <InfoCard purpleText={purpleText} blackText={blackText} />
+  );
   return (
     <View style={contentStyle.container}>
       <View>
@@ -37,8 +59,10 @@ export function Content() {
       </View>
       <View>
         <FlatList
-          data={selectData}
-          renderItem={({ item }) => <Item icon={item.icon} text={item.text} />}
+          data={SELECT_DATA}
+          renderItem={({ item }) => (
+            <SelectItem icon={item.icon} text={item.text} />
+          )}
           keyExtractor={(item) => item.id}
           horizontal
         />
@@ -47,10 +71,26 @@ export function Content() {
         <MyCards />
       </View>
       <View>
-        <InfoCard
-          purpleText="Pix no credito: "
-          blackText="transfira sem usar o seu saldo"
+        <FlatList
+          data={INFO_DATA}
+          renderItem={({ item }) => (
+            <InfoItem purpleText={item.purpleText} blackText={item.blackText} />
+          )}
+          keyExtractor={(item) => item.id}
+          horizontal
         />
+      </View>
+      <View>
+        <Credit />
+      </View>
+      <View>
+        <Text>Emprestimo</Text>
+      </View>
+      <View>
+        <Text>Investimento</Text>
+      </View>
+      <View>
+        <Text>descubra mais</Text>
       </View>
     </View>
   );

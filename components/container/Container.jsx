@@ -1,13 +1,15 @@
-import { Text, View } from "react-native";
+import { ScrollView, Text, View } from "react-native";
 import { UserBar } from "../userBar/UserBar";
 import containerStyle from "./Style";
 import { Content } from "../principalContent/Content";
 
 export function Container() {
   return (
-    <View style={containerStyle.container}>
-      <UserBar />
-      <Content />
-    </View>
+    <ScrollView>
+      <View style={containerStyle.container}>
+        <UserBar />
+        <Content />
+      </View>
+    </ScrollView>
   );
 }

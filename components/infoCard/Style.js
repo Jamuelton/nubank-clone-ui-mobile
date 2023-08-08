@@ -1,9 +1,12 @@
 import { StyleSheet } from "react-native";
 
 const infoStyle = StyleSheet.create({
+  viewCard: {
+    padding: 5,
+  },
   container: {
     backgroundColor: "#F0F1F5",
-    width: "65%",
+    width: 250,
     height: 80,
     padding: 10,
     borderRadius: 15,
