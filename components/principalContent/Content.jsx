@@ -9,6 +9,7 @@ import { MyCards } from "../myCards/MyCards";
 import { InfoCard } from "../infoCard/InfoCard";
 import { Credit } from "../credit/Credit";
 import { Card } from "../card/Card";
+import { Announcement } from "../announcement/Announcement";
 
 export function Content() {
   const SELECT_DATA = [
@@ -97,7 +98,7 @@ export function Content() {
         />
       </View>
       <View>
-        <Text>descubra mais</Text>
+        <Announcement />
       </View>
     </View>
   );
