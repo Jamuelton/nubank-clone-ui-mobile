@@ -6,6 +6,7 @@ import { SelectFunc } from "../selectFunc/SelectFunc";
 import { MaterialIcons } from "@expo/vector-icons";
 
 import { MyCards } from "../myCards/MyCards";
+import { InfoCard } from "../infoCard/InfoCard";
 
 export function Content() {
   const selectData = [
@@ -46,7 +47,10 @@ export function Content() {
         <MyCards />
       </View>
       <View>
-        <Text>Emprestimos</Text>
+        <InfoCard
+          purpleText="Pix no credito: "
+          blackText="transfira sem usar o seu saldo"
+        />
       </View>
     </View>
   );
