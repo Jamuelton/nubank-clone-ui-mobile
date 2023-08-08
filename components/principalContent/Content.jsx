@@ -85,10 +85,16 @@ export function Content() {
         <Credit />
       </View>
       <View>
-        <Card />
+        <Card
+          title="Emprestimo"
+          content="Valor disponível de até R$ 25.000,00"
+        />
       </View>
       <View>
-        <Text>Investimento</Text>
+        <Card
+          title="Investimentos"
+          content="O jeito Nu de investir: sem asteriscos, linguagem fácil e a partir de R$1. Saiba mais.  "
+        />
       </View>
       <View>
         <Text>descubra mais</Text>
