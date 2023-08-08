@@ -8,6 +8,7 @@ import { MaterialIcons } from "@expo/vector-icons";
 import { MyCards } from "../myCards/MyCards";
 import { InfoCard } from "../infoCard/InfoCard";
 import { Credit } from "../credit/Credit";
+import { Card } from "../card/Card";
 
 export function Content() {
   const SELECT_DATA = [
@@ -84,7 +85,7 @@ export function Content() {
         <Credit />
       </View>
       <View>
-        <Text>Emprestimo</Text>
+        <Card />
       </View>
       <View>
         <Text>Investimento</Text>
