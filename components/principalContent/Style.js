@@ -6,6 +6,11 @@ const contentStyle = StyleSheet.create({
     height: "80%",
     padding: 10,
   },
+  cardView: {
+    alignItems: "flex-start",
+    marginTop: 10,
+    padding: 10,
+  },
 });
 
 export default contentStyle;

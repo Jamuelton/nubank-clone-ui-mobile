@@ -5,6 +5,8 @@ import { Account } from "../account/Accont";
 import { SelectFunc } from "../selectFunc/SelectFunc";
 import { MaterialIcons } from "@expo/vector-icons";
 
+import { MyCards } from "../myCards/MyCards";
+
 export function Content() {
   const selectData = [
     {
@@ -40,8 +42,8 @@ export function Content() {
           horizontal
         />
       </View>
-      <View>
-        <Text>Meus cartões</Text>
+      <View style={contentStyle.cardView}>
+        <MyCards />
       </View>
       <View>
         <Text>Emprestimos</Text>
