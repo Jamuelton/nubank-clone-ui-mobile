@@ -4,6 +4,7 @@ import contentStyle from "./Style";
 import { Account } from "../account/Accont";
 import { SelectFunc } from "../selectFunc/SelectFunc";
 import { MaterialIcons } from "@expo/vector-icons";
+import { AntDesign } from "@expo/vector-icons";
 
 import { MyCards } from "../myCards/MyCards";
 import { InfoCard } from "../infoCard/InfoCard";
@@ -21,10 +22,20 @@ export function Content() {
     {
       id: "2",
       icon: <MaterialIcons name="money" size={24} color="black" />,
-      text: "Saldo",
+      text: "Extrato",
     },
     {
       id: "3",
+      icon: <AntDesign name="arrowdown" size={24} color="black" />,
+      text: "Depositar",
+    },
+    {
+      id: "4",
+      icon: <AntDesign name="arrowup" size={24} color="black" />,
+      text: "Transferir",
+    },
+    {
+      id: "5",
       icon: (
         <MaterialIcons name="account-balance-wallet" size={24} color="black" />
       ),
@@ -60,17 +71,17 @@ export function Content() {
     },
     {
       id: "2",
-      img: require("../../assets/nubank.png"),
-      title: "Nu Limite Garantido",
-      content: "Seu dinheiro vira mais limite redendo a 100% do CDI",
-      button: "Ver mais",
+      img: require("../../assets/28-nubank.jpg"),
+      title: "Nubank Celular Seguro",
+      content: "100% cobertura, 0% estresse.",
+      button: "Conhecer",
     },
     {
       id: "3",
-      img: require("../../assets/nubank.png"),
-      title: "Nu Limite Garantido",
-      content: "Seu dinheiro vira mais limite redendo a 100% do CDI",
-      button: "Ver mais",
+      img: require("../../assets/d85527f30ddbfde13a466afa8ffbafb9.jpg"),
+      title: "Indique o Nu para amigos",
+      content: "Espalhe como é simples estar no controle",
+      button: "Indicar amigos",
     },
   ];
 

@@ -14,7 +14,7 @@ const selectStyle = StyleSheet.create({
     height: 80,
     alignItems: "center",
     justifyContent: "center",
-    borderRadius: "100%",
+    borderRadius: 100,
   },
   iconText: {
     fontWeight: "600",

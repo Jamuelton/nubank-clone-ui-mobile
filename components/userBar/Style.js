@@ -23,7 +23,7 @@ const userBarStyle = StyleSheet.create({
     width: 70,
     height: 70,
     padding: 10,
-    borderRadius: "100%",
+    borderRadius: 100,
     justifyContent: "center",
     alignItems: "center",
   },

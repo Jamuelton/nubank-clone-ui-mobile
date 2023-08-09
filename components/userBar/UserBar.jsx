@@ -19,7 +19,7 @@ export function UserBar() {
           </View>
         </View>
         <View style={userBarStyle.userNameView}>
-          <Text style={userBarStyle.userName}>Olá, Nome usuário</Text>
+          <Text style={userBarStyle.userName}>Olá, Jamuelton</Text>
         </View>
       </View>
     </View>

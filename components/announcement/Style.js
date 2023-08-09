@@ -13,6 +13,7 @@ const annouStyle = StyleSheet.create({
 
   bottomCard: {
     width: 270,
+    height: 120,
     backgroundColor: "#F0F1F5",
     padding: 10,
     flexDirection: "column",
