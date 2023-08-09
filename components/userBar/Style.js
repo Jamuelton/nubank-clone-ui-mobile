@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 const userBarStyle = StyleSheet.create({
   container: {
     width: "100%",
-    height: "20%",
+    height: "10%",
     backgroundColor: "#830AD1",
   },
   content: {
@@ -34,7 +34,9 @@ const userBarStyle = StyleSheet.create({
     color: "#fff",
     gap: 32,
   },
-  userNameView: {},
+  userNameView: {
+    marginTop: 20,
+  },
   userName: {
     color: "#fff",
     fontSize: 16,

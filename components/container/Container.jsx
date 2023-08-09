@@ -5,11 +5,9 @@ import { Content } from "../principalContent/Content";
 
 export function Container() {
   return (
-    <ScrollView>
-      <View style={containerStyle.container}>
-        <UserBar />
-        <Content />
-      </View>
+    <ScrollView style={containerStyle.container}>
+      <UserBar style={containerStyle.userBarView} />
+      <Content style={containerStyle.contentView} />
     </ScrollView>
   );
 }

@@ -6,8 +6,8 @@ const containerStyle = StyleSheet.create({
     paddingTop: 33,
     flexDirection: "column",
   },
-  userBarView: {},
-  contentView: {},
+  userBarView: { flex: 1 },
+  contentView: { flex: 2 },
 });
 
 export default containerStyle;
